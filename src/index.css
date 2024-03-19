@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  @apply font-light text-white;
+}
+
+.checkbox-custom {
+  @apply appearance-none w-[14px] h-[14px] relative border-gray-400 rounded-sm border bg-transparent cursor-pointer checked:border-[#4ead6c] checked:after:content-[url(./assets/icons/bx-check.svg)] checked:after:absolute checked:after:left-[50%] checked:after:top-[65%] checked:after:-translate-x-1/2 checked:after:-translate-y-1/2;
+}
+
+.btn-blue-cst {
+  @apply bg-blue-cst rounded-sm  py-2 self-end max-w-[200px] w-full;
+}
+
+.btn-red-cst {
+  @apply bg-red-cst text-white py-2 w-full rounded-sm mt-5;
+}
